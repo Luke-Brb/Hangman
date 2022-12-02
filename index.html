@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+      }
+      form {
+        position: relative;
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+    <title>Hangman</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <label>Hangman</label>
+    <br />
+    <br />
+    <form>
+      <div class="formBox">
+        <label for="title">Enter a word:</label>
+        <input type="text" id="word" />
+      </div>
+      <div class="formBox">
+        <button id="btn">Click to Add</button>
+      </div>
+    </form>
+    <br />
+    <br />
+    <form>
+      <div class="formBox">
+        <label for="title">Search for the letter:</label>
+        <input type="text" id="letter" />
+      </div>
+      <div class="formBox">
+        <button id="checkletter">Press to check</button>
+      </div>
+      <script src="main.js"></script>
+    </form>
+    <br />
+    <br />
+    <div id="newMessage"></div>
+    <br />
+    <br />
+    <div id="statusWord"></div>
+    <br />
+    <br />
+    <div id="statusAttempts"></div>
+  </body>
+</html>
